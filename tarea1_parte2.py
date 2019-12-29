@@ -3,36 +3,36 @@ import Tarea1
 #la funcion va conviertiendo un numero entregado de una base que la persona da en
 #una base especifica a otra base requerida y se le entrega el numero en la base nueva
 #ejemplo:convertirBases()
-#Convertir n° desde base1 a base2
+#Convertir nÂ° desde base1 a base2
 #base1 ? 5
-#n° ? 25
+#nÂ° ? 25
 #base incorrecta
-#otra conversión (si/no)? Si
-#Convertir n° desde base1 a base2
+#otra conversiÃ³n (si/no)? Si
+#Convertir nÂ° desde base1 a base2
 #base1 ? 7
-#n° ? 453
+#nÂ° ? 453
 #base2 ? 4
-#n° =  3222
-#otra conversión (si/no)? no
+#nÂ° =  3222
+#otra conversiÃ³n (si/no)? no
 def convertirBases():
-    print "Convertir n° desde base1 a base2"
+    print "Convertir nÂ° desde base1 a base2"
     base1 = input("base1 ? ")
     if base1 > 9 or 2 > base1:
         print "base incorrecta"
-        x = raw_input("otra conversión (si/no)? ")
+        x = raw_input("otra conversiÃ³n (si/no)? ")
         if x == "si" or x == "Si":
             return convertirBases()
         else: return
-    num = input("n° ? ")
+    num = input("nÂ° ? ")
     if not Tarea1.esCorrecto(num,base1):
         print "numero incorrecto"
-        x = raw_input("otra conversión (si/no)? ")
+        x = raw_input("otra conversiÃ³n (si/no)? ")
         if x == "si" or x == "Si":
             return convertirBases()
         else: return
     base2 = input("base2 ? ")
-    print "n° =  " , Tarea1.base((Tarea1.decimal(num,base1)),base2)
-    x = raw_input("otra conversión (si/no)? ")
+    print "nÂ° =  " , Tarea1.base((Tarea1.decimal(num,base1)),base2)
+    x = raw_input("otra conversiÃ³n (si/no)? ")
     if x == "si" or x == "Si":
         return convertirBases()
     else: return
@@ -42,20 +42,20 @@ def convertirBases():
 #la funcion no recibe ningun parametro, y mediante un input se entrega el numero en decimal 
 #y se entrega el menor de todos los ingresados
 #ejemplo:Menor()
-#n°? 11012
+#nÂ°? 11012
 #decimal = 13
-#n°? 313
+#nÂ°? 313
 #numero incorrecto
-#n°? 541
+#nÂ°? 541
 #base incorrecta
-#n°? 1023
+#nÂ°? 1023
 #decimal= 11
-#n°? 308
+#nÂ°? 308
 #decimal= 
-#n°? 0 (fin de datos)
+#nÂ°? 0 (fin de datos)
 #menor: base= 3 digitos = 102 decimal= 11
 def Menor(inicial=True, menor=0, basemenor=10):
-  num = input("nº? ")
+  num = input("nÂº? ")
   base = num%10
   numero = num/10
   if numero == 0:
